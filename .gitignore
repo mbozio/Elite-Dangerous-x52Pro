@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+.venv/
+
+# Local application data and exported user profiles
+profiles/
+exports/
+*.tmp.binds
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ed-x52-pro-mapper"
+version = "0.1.0"
+description = "Visual mapper for Elite Dangerous Logitech X52 Pro .binds profiles"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Elite Dangerous X52 Pro Mapper contributors" }]
+license = { text = "MIT" }
+
+[project.scripts]
+ed-x52-mapper = "edx52mapper.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
